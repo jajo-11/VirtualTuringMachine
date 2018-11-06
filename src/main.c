@@ -128,6 +128,7 @@ int step(const char *mode) {
     for (i = stateMap[state]; i < stateMap[state + 1]; ++i) {
         if (transitionMap[i].read == *read) {
             if (!(*mode & QUIET_MODE)) {
+                printf("Pos: %ld; ", readWriteHead);
                 printf("%s: %s; ", columnNames[0], (char *) stateNames->data[state]);
                 printf("%s: %c; ", columnNames[1], *read);
                 printf("%s: %c; ", columnNames[2], transitionMap[i].write);
