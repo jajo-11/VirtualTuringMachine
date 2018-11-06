@@ -404,7 +404,7 @@ int main(int argc, char *argv[]) {
 
     //execution
     if (cycles != 0) {
-        for (; cycles >= 0 && state != finalState; --cycles) {
+        for (; cycles > 0 && state != finalState; --cycles) {
             if (step(&mode) != 0) goto error;
             printPtr();
         }
