@@ -1,0 +1,13 @@
+Zustand, Eingabe, Ausgabe, Bewegung, Folgezustand
+  1,       (,       (,       R,        1
+  1,       X,       X,       R,        1
+  1,       ),       X,       L,        2
+  1,       #,       #,       L,        3
+  2,       X,       X,       L,        2
+  2,       ),       ),       L,        2
+  2,       (,       X,       R,        1
+  2,       #,       0,       -,        Final
+  3,       X,       X,       L,        3
+  3,       #,       1,       -,        Final
+  3,       (,       0,       -,        Final
+  Final,   #,       #,       -,        Final
